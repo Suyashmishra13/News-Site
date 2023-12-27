@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Col, Container, Row, Button,Form} from "react-bootstrap";
+import { Card, Col, Container, Row, Button, Form } from "react-bootstrap";
 import './CardComponent.css'; // Import the CSS file for styling
 import useNewsData from "../hooks/useNewsData";
 import CustomPagination from "./CustomPagination";
@@ -18,7 +18,7 @@ const NewsList = (props) => {
   const handleRegionFilterChange = (e) => setRegionFilter(e.target.value);
   const handleLanguageFilterChange = (e) => setLanguageFilter(e.target.value);
 
-  const { newsData, loading, error } = useNewsData(category, searchTerm, dateFilter, regionFilter, languageFilter);
+  const { newsData } = useNewsData(category, searchTerm, dateFilter, regionFilter, languageFilter);
 
   return (
     <Container>
@@ -37,23 +37,6 @@ const NewsList = (props) => {
 
           <div className="collapse" id="filterCollapse">
             <Form>
-              {/* <Form.Group className="mb-3">
-                <Form.Label>Filter by Date:</Form.Label>
-                <Form.Control
-                  type="date"
-                  value={dateFilter}
-                  onChange={handleDateFilterChange}
-                />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label>Filter by Region:</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter region (e.g., India)"
-                  value={regionFilter}
-                  onChange={handleRegionFilterChange}
-                />
-              </Form.Group> */}
               <Form.Group className="mb-3">
                 <Form.Label>Filter by Language:</Form.Label>
                 <Form.Control
