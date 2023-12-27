@@ -7,8 +7,6 @@ import CustomPagination from "./CustomPagination";
 const NewsList = (props) => {
   const { category, searchTerm } = props;
   const [currentPage, setCurrentPage] = useState(1);
-  const [dateFilter, setDateFilter] = useState("");
-  const [regionFilter, setRegionFilter] = useState("");
   const [languageFilter, setLanguageFilter] = useState("");
   const pageSize = 6;
 
@@ -16,7 +14,7 @@ const NewsList = (props) => {
 
   const handleLanguageFilterChange = (e) => setLanguageFilter(e.target.value);
 
-  const { newsData } = useNewsData(category, searchTerm, dateFilter, regionFilter, languageFilter);
+  const { newsData } = useNewsData(category, searchTerm, null, null, languageFilter);
 
   return (
     <Container>
