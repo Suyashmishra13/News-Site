@@ -30,12 +30,12 @@ function CustomPagination(props) {
       <Pagination>
         <Pagination.Prev
           disabled={currentPage === 1}
-          onClick={() => handlePageClick(currentPage - 1)}
+          onClick={() => onPageChange(currentPage - 1)}
         />
         {renderPageItems()}
         <Pagination.Next
           disabled={currentPage === totalPages}
-          onClick={() => handlePageClick(currentPage + 1)}
+          onClick={() => onPageChange(currentPage + 1)}
         />
       </Pagination>
     </div>

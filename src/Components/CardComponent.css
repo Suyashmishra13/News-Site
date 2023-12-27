@@ -1,44 +1,26 @@
-.skeleton {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    transition: box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px; /* Add some margin to separate cards */
-  }
-  
-  .skeleton:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .skeleton-img {
-    width: 100%;
-    height: 80%; /* Increased height for better visibility */
-    background-color: #eee;
-  }
-  
-  .skeleton-content {
-    padding: 10px;
-  }
-  
-  .skeleton-title {
-    width: 100%;
-    height: 40px; /* Increased height for better visibility */
-    margin: 10px 0;
-    background-color: #eee;
-  }
-  
-  .skeleton-text {
-    width: 100%;
-    height: 180px; /* Increased height for better visibility */
-    margin: 10px 0; /* Adjusted margin for better spacing */
-    background-color: #eee;
-  }
-  
-  .skeleton-link {
-    width: 100px; /* Adjusted width for better visibility */
-    height: 20px;
-    background-color: #eee;
-    margin-top: 10px;
-  }
-  
+.skeleton-img {
+  width: 100%;
+  height: 200px; /* Increase height for better visibility */
+  background-color: #eee;
+}
+
+.skeleton-title {
+  width: 100%;
+  height: 60px; /* Increased height for better visibility */
+  margin: 10px 0;
+  background-color: #eee;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 300px; /* Increased height for better visibility */
+  margin: 10px 0; /* Adjusted margin for better spacing */
+  background-color: #eee;
+}
+
+.skeleton-link {
+  width: 150px; /* Adjusted width for better visibility */
+  height: 30px;
+  background-color: #eee;
+  margin-top: 10px;
+}
