@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Col, Container, Row, Form, Button } from "react-bootstrap";
+import { Card, Col, Container, Row, } from "react-bootstrap";
 import './CardComponent.css'; // Import the CSS file for styling
 import useNewsData from "../hooks/useNewsData";
 import CustomPagination from "./CustomPagination";
