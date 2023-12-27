@@ -1,11 +1,8 @@
+import React from "react";
 import { Pagination } from "react-bootstrap";
 
 function CustomPagination(props) {
   const { currentPage, totalPages, onPageChange } = props;
-
-  const handlePageClick = (pageNumber) => {
-    onPageChange(pageNumber);
-  };
 
   const renderPageItems = () => {
     const pageItems = [];
