@@ -14,8 +14,6 @@ const NewsList = (props) => {
 
   const onPageChange = (pageNumber) => setCurrentPage(pageNumber);
 
-  const handleDateFilterChange = (e) => setDateFilter(e.target.value);
-  const handleRegionFilterChange = (e) => setRegionFilter(e.target.value);
   const handleLanguageFilterChange = (e) => setLanguageFilter(e.target.value);
 
   const { newsData } = useNewsData(category, searchTerm, dateFilter, regionFilter, languageFilter);
